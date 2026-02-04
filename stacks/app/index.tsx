@@ -9,6 +9,9 @@ export default function Index() {
       <Button title="Go User Screen" onPress={() => router.push("/users")} />
       <Link href="/products/1">Go Product 1</Link>
       <Link href="/products/2">Go Product 2</Link>
+      <Link style={styles.button} href="/posts">
+        Go Posts
+      </Link>
     </View>
   );
 }
@@ -22,5 +25,9 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "blue",
     color: "white",
+    padding: 10,
+    marginBlock: 10,
+    fontSize: 18,
+    borderRadius: 10,
   },
 });
