@@ -1,0 +1,11 @@
+import React from "react";
+import { Tabs } from "expo-router";
+
+export default function PrivetLayOut() {
+  return (
+    <Tabs>
+      <Tabs.Screen name="home" options={{ title: "Home" }} />
+      <Tabs.Screen name="users" options={{ title: "Users" }} />
+    </Tabs>
+  );
+}
