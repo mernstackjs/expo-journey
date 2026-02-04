@@ -71,7 +71,7 @@ export default function RootLayout() {
           name="user"
           options={{
             title: "User",
-
+            popToTopOnBlur: true,
             headerRight: () => (
               <View
                 style={{
