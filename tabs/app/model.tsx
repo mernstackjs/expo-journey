@@ -4,7 +4,7 @@ import React from "react";
 export default function ModelScreen() {
   return (
     <View>
-      <Text>ModelScreen</Text>
+      <Text>ModelScreen hh</Text>
     </View>
   );
 }

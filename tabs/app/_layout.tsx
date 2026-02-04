@@ -11,6 +11,7 @@ export default function RootLayout() {
         name="model"
         options={{
           title: "my bank",
+          presentation: "modal",
           headerBackTitle: "Back To Home",
           headerLeft: () => (
             <Pressable
