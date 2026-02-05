@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "components",
-    "slug": "components",
+    "name": "deep_learn_components",
+    "slug": "deep_learn_components",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "components",
+    "scheme": "deeplearncomponents",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {

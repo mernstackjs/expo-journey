@@ -1,5 +1,5 @@
 {
-  "name": "components",
+  "name": "deep_learn_components",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
