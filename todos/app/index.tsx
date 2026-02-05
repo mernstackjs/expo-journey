@@ -11,8 +11,7 @@ export default function Index() {
       }}
     >
       <Text>Welcome</Text>
-      <Link href="/login">Login</Link>
-      <Link href="/(privet)/home">Privet Home</Link>
+      <Link href="/school">Go School</Link>
     </View>
   );
 }

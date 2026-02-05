@@ -1,36 +1,32 @@
-import { AuthProvider, useAuth } from "@/libs/AuthContext";
-import { Stack } from "expo-router";
+import { Stack, useRouter } from "expo-router";
+import React from "react";
 
-function RootStack() {
-  const { isLoggedIn, isLoading } = useAuth();
+import AntDesign from "@expo/vector-icons/AntDesign";
 
-  if (isLoading) return null;
-
+export default function RootLayout() {
+  const router = useRouter();
   return (
     <Stack>
       <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="school"
+        options={{
+          title: "School Manager",
 
-      <Stack.Protected guard={isLoggedIn}>
-        <Stack.Screen name="(privet)" options={{ headerShown: false }} />
-      </Stack.Protected>
-
-      <Stack.Protected guard={!isLoggedIn}>
-        <Stack.Screen
-          name="login"
-          options={{
-            title: "Login",
-            presentation: "modal",
-          }}
-        />
-      </Stack.Protected>
+          headerLeft: () => (
+            <AntDesign
+              onPress={() => router.push("/")}
+              name="arrow-left"
+              size={24}
+              color="black"
+            />
+          ),
+        }}
+      />
+      <Stack.Screen
+        name="add_school"
+        options={{ title: "Add New School", presentation: "modal" }}
+      />
     </Stack>
-  );
-}
-
-export default function RootLayout() {
-  return (
-    <AuthProvider>
-      <RootStack />
-    </AuthProvider>
   );
 }
